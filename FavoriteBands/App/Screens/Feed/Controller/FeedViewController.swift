@@ -9,32 +9,33 @@ import UIKit
 
 class FeedViewController: UIViewController {
     
-    lazy var labelTest: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Carregando..."
-        label.textColor = .red
-        return label
-    }()
-    
+    let feedView = FeedView()
     let viewModel = FeedViewModel()
+    
+    override func loadView() {
+        super.loadView()
+        view = feedView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemCyan
-        
-        view.addSubview(labelTest)
-        
-        NSLayoutConstraint.activate([
-            labelTest.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            labelTest.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-        ])
-        
+        setNavBar()
+        setDelegateAndDataSource()
         handleStates()
         viewModel.loadData()
     }
     
-    func handleStates() {
+    private func setNavBar() {
+        title = "Favorite Bands"
+        view.backgroundColor = .systemBackground
+    }
+    
+    private func setDelegateAndDataSource() {
+        feedView.tableView.delegate = self
+        feedView.tableView.dataSource = self
+    }
+    
+    private func handleStates() {
         viewModel.state.bind { states in
             switch states {
             case .loading:
@@ -47,17 +48,41 @@ class FeedViewController: UIViewController {
         }
     }
     
-    func showLoadingState() {
-        
+    private func showLoadingState() {
+        feedView.removeFromSuperview()
     }
     
-    func showLoadedState() {
-        labelTest.text = viewModel.newLabel
-        labelTest.textColor = .systemGreen
-        view.backgroundColor = .systemBackground
+    private func showLoadedState() {
+        feedView.spinner.stopAnimating()
+        feedView.tableView.reloadData()
     }
     
-    func showErrorState() {
-        
+    private func showErrorState() {
+        let alert = UIAlertController(title: "Ocorreu um erro!", message: "Tentar novamente?", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Sim", style: .default) { action in
+            
+        }
+        let nok = UIAlertAction(title: "Não", style: .cancel) { action in
+            
+        }
+        alert.addAction(ok)
+        alert.addAction(nok)
+        present(alert, animated: true)
+    }
+}
+
+extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "LOGO DA BANDA AQUI"
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
