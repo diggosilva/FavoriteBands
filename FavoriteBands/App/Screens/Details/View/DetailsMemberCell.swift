@@ -25,7 +25,7 @@ class DetailsMemberCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome do Integrante"
-        label.font = .systemFont(ofSize: 20, weight: .semibold)
+        label.font = .systemFont(ofSize: 24, weight: .semibold)
         return label
     }()
     
@@ -33,8 +33,8 @@ class DetailsMemberCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome do Instrumento"
-        label.textColor = .secondaryLabel
-        label.font = .systemFont(ofSize: 18, weight: .regular)
+        label.textColor = .darkGray
+        label.font = .systemFont(ofSize: 20, weight: .regular)
         return label
     }()
     
