@@ -16,11 +16,18 @@ enum FeedViewControllerStates {
 class FeedViewModel {
     var state: Bindable<FeedViewControllerStates> = Bindable(value: .loading)
     
-    var newLabel: String = ""
+    
+    func numbersOfRowsInSection() {
+        
+    }
+    
+    func cellForRowAt(indexPath: IndexPath) {
+        
+    }
     
     func loadData() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.newLabel = "CARREGADO!!!"
+            
             self.state.value = .loaded
         }
     }

@@ -18,7 +18,8 @@ class FeedView: UIView {
     lazy var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        table.register(FeedCell.self, forCellReuseIdentifier: FeedCell.identifier)
+        table.rowHeight = 116
         return table
     }()
     

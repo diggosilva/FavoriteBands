@@ -14,6 +14,7 @@
 		92438A542BEA6ED4002E8986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92438A522BEA6ED4002E8986 /* LaunchScreen.storyboard */; };
 		92ADBABB2BEA76DB00B3992E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBABA2BEA76DB00B3992E /* FeedViewModel.swift */; };
 		92ADBABD2BEA7D7300B3992E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBABC2BEA7D7300B3992E /* FeedView.swift */; };
+		92ADBABF2BEA81D100B3992E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBABE2BEA81D100B3992E /* FeedCell.swift */; };
 		92B2C3952BEA758400A49E6D /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2C3942BEA758400A49E6D /* Bindable.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		92438A552BEA6ED4002E8986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92ADBABA2BEA76DB00B3992E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		92ADBABC2BEA7D7300B3992E /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		92ADBABE2BEA81D100B3992E /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		92B2C3942BEA758400A49E6D /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				92ADBABC2BEA7D7300B3992E /* FeedView.swift */,
+				92ADBABE2BEA81D100B3992E /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92ADBABF2BEA81D100B3992E /* FeedCell.swift in Sources */,
 				92ADBABB2BEA76DB00B3992E /* FeedViewModel.swift in Sources */,
 				92438A4C2BEA6ED3002E8986 /* FeedViewController.swift in Sources */,
 				92438A482BEA6ED3002E8986 /* AppDelegate.swift in Sources */,
