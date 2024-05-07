@@ -1,5 +1,5 @@
 //
-//  FeedView.swift
+//  DetailsBandView.swift
 //  FavoriteBands
 //
 //  Created by Diggo Silva on 07/05/24.
@@ -7,20 +7,12 @@
 
 import UIKit
 
-class FeedView: UIView {
-    lazy var spinner: UIActivityIndicatorView = {
-        let spinner = UIActivityIndicatorView(style: .large)
-        spinner.translatesAutoresizingMaskIntoConstraints = false
-        spinner.startAnimating()
-        return spinner
-    }()
-    
+class DetailsBandView: UIView {
     lazy var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
-        table.register(FeedCell.self, forCellReuseIdentifier: FeedCell.identifier)
         table.backgroundColor = .secondarySystemFill
-        table.rowHeight = 100
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return table
     }()
     
@@ -40,7 +32,6 @@ class FeedView: UIView {
     
     private func setHierarchy () {
         addSubview(tableView)
-        addSubview(spinner)
     }
     
     private func setConstraints() {
@@ -49,9 +40,6 @@ class FeedView: UIView {
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
-            
-            spinner.centerXAnchor.constraint(equalTo: centerXAnchor),
-            spinner.centerYAnchor.constraint(equalTo: centerYAnchor),
         ])
     }
 }

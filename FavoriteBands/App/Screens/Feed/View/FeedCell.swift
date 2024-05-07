@@ -23,9 +23,9 @@ class FeedCell: UITableViewCell {
         image.contentMode = .scaleAspectFill
         image.image = UIImage(systemName: "person.fill")
         image.backgroundColor = .lightGray
-        image.layer.borderColor = UIColor.label.cgColor
+        image.layer.borderColor = UIColor.gray.cgColor
         image.layer.borderWidth = 1
-        image.layer.cornerRadius = 50
+        image.layer.cornerRadius = 40
         image.clipsToBounds = true
         return image
     }()
@@ -62,11 +62,11 @@ class FeedCell: UITableViewCell {
             viewBG.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             viewBG.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             
-            imageLogo.topAnchor.constraint(equalTo: viewBG.topAnchor, constant: 8),
-            imageLogo.bottomAnchor.constraint(equalTo: viewBG.bottomAnchor, constant: -8),
+            imageLogo.topAnchor.constraint(equalTo: viewBG.topAnchor, constant: 10),
+            imageLogo.bottomAnchor.constraint(equalTo: viewBG.bottomAnchor, constant: -10),
             imageLogo.centerXAnchor.constraint(equalTo: viewBG.centerXAnchor),
             imageLogo.centerYAnchor.constraint(equalTo: viewBG.centerYAnchor),
-            imageLogo.widthAnchor.constraint(equalToConstant: 100),
+            imageLogo.widthAnchor.constraint(equalToConstant: 80),
         ])
     }
 }
