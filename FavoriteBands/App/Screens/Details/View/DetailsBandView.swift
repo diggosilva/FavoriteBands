@@ -12,7 +12,7 @@ class DetailsBandView: UIView {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         table.backgroundColor = .secondarySystemFill
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        table.register(DetailsMemberCell.self, forCellReuseIdentifier: DetailsMemberCell.identifier)
         return table
     }()
     

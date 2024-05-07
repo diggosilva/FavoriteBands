@@ -25,8 +25,25 @@ class DetailsMemberCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome do Integrante"
-        label.font = .systemFont(ofSize: 16, weight: .bold)
+        label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
+    }()
+    
+    lazy var labelInstrument: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Nome do Instrumento"
+        label.textColor = .secondaryLabel
+        label.font = .systemFont(ofSize: 18, weight: .regular)
+        return label
+    }()
+    
+    lazy var hStackView: UIStackView = {
+        let stack = UIStackView(arrangedSubviews: [labelName, labelInstrument])
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .vertical
+        stack.distribution = .equalSpacing
+        return stack
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -45,7 +62,7 @@ class DetailsMemberCell: UITableViewCell {
     
     private func setHierarchy () {
         addSubview(imageMember)
-        addSubview(labelName)
+        addSubview(hStackView)
     }
     
     private func setConstraints() {
@@ -56,7 +73,9 @@ class DetailsMemberCell: UITableViewCell {
             imageMember.widthAnchor.constraint(equalToConstant: 80),
             imageMember.heightAnchor.constraint(equalToConstant: 80),
             
-            
+            hStackView.centerYAnchor.constraint(equalTo: imageMember.centerYAnchor),
+            hStackView.leadingAnchor.constraint(equalTo: imageMember.trailingAnchor, constant: 10),
+            hStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
         ])
     }
 }
