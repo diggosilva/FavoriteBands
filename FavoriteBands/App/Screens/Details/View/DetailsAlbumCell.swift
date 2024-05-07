@@ -13,8 +13,8 @@ class DetailsAlbumCell: UITableViewCell {
     lazy var imageAlbum: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(systemName: "house.fill")?.withTintColor(.systemRed, renderingMode: .alwaysOriginal)
-        image.backgroundColor = .lightGray
+        image.image = UIImage(systemName: "house.fill")
+        image.backgroundColor = .systemYellow
         image.contentMode = .scaleAspectFill
         image.layer.cornerRadius = 10
         image.clipsToBounds = true

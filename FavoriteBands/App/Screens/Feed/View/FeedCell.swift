@@ -22,7 +22,7 @@ class FeedCell: UITableViewCell {
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleAspectFill
         image.image = UIImage(systemName: "person.fill")
-        image.backgroundColor = .lightGray
+        image.backgroundColor = .white
         image.layer.borderColor = UIColor.gray.cgColor
         image.layer.borderWidth = 1
         image.layer.cornerRadius = 40

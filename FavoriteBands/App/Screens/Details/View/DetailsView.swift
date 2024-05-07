@@ -7,12 +7,13 @@
 
 import UIKit
 
-class DetailsBandView: UIView {
+class DetailsView: UIView {
     lazy var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         table.backgroundColor = .secondarySystemFill
         table.register(DetailsMemberCell.self, forCellReuseIdentifier: DetailsMemberCell.identifier)
+        table.register(DetailsAlbumCell.self, forCellReuseIdentifier: DetailsAlbumCell.identifier)
         return table
     }()
     

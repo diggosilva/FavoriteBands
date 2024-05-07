@@ -18,6 +18,7 @@ class FeedViewModel {
     var service = Service()
     
     var bandsList: [FeedBand] = []
+    var membersList: [MemberDetails] = []
     
     func numbersOfRowsInSection() -> Int {
         return bandsList.count

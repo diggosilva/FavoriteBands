@@ -25,7 +25,7 @@ class DetailsMemberCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome do Integrante"
-        label.font = .systemFont(ofSize: 24, weight: .semibold)
+        label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
     
@@ -34,7 +34,7 @@ class DetailsMemberCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome do Instrumento"
         label.textColor = .darkGray
-        label.font = .systemFont(ofSize: 20, weight: .regular)
+        label.font = .systemFont(ofSize: 17, weight: .regular)
         return label
     }()
     
@@ -55,6 +55,11 @@ class DetailsMemberCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configure(memberDetails: MemberDetails) {
+        labelName.text = memberDetails.name
+        labelInstrument.text = memberDetails.instrument
+    }
+    
     private func setupView() {
         setHierarchy()
         setConstraints()
@@ -68,14 +73,14 @@ class DetailsMemberCell: UITableViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([
             imageMember.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-            imageMember.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            imageMember.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             imageMember.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
             imageMember.widthAnchor.constraint(equalToConstant: 80),
             imageMember.heightAnchor.constraint(equalToConstant: 80),
             
             hStackView.centerYAnchor.constraint(equalTo: imageMember.centerYAnchor),
             hStackView.leadingAnchor.constraint(equalTo: imageMember.trailingAnchor, constant: 10),
-            hStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            hStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
         ])
     }
 }
