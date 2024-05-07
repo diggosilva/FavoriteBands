@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		92438A482BEA6ED3002E8986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A472BEA6ED3002E8986 /* AppDelegate.swift */; };
 		92438A4A2BEA6ED3002E8986 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A492BEA6ED3002E8986 /* SceneDelegate.swift */; };
-		92438A4C2BEA6ED3002E8986 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A4B2BEA6ED3002E8986 /* ViewController.swift */; };
+		92438A4C2BEA6ED3002E8986 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A4B2BEA6ED3002E8986 /* FeedViewController.swift */; };
 		92438A512BEA6ED4002E8986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92438A502BEA6ED4002E8986 /* Assets.xcassets */; };
 		92438A542BEA6ED4002E8986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92438A522BEA6ED4002E8986 /* LaunchScreen.storyboard */; };
+		92ADBABB2BEA76DB00B3992E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBABA2BEA76DB00B3992E /* FeedViewModel.swift */; };
+		92B2C3952BEA758400A49E6D /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2C3942BEA758400A49E6D /* Bindable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92438A442BEA6ED3002E8986 /* FavoriteBands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteBands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92438A472BEA6ED3002E8986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92438A492BEA6ED3002E8986 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92438A4B2BEA6ED3002E8986 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92438A4B2BEA6ED3002E8986 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		92438A502BEA6ED4002E8986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92438A532BEA6ED4002E8986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92438A552BEA6ED4002E8986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92ADBABA2BEA76DB00B3992E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		92B2C3942BEA758400A49E6D /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		92438A5F2BEA7006002E8986 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				92ADBABA2BEA76DB00B3992E /* FeedViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -119,7 +124,7 @@
 		92438A612BEA7009002E8986 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				92438A4B2BEA6ED3002E8986 /* ViewController.swift */,
+				92438A4B2BEA6ED3002E8986 /* FeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 		92438A642BEA703C002E8986 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				92B2C3942BEA758400A49E6D /* Bindable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -222,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92438A4C2BEA6ED3002E8986 /* ViewController.swift in Sources */,
+				92ADBABB2BEA76DB00B3992E /* FeedViewModel.swift in Sources */,
+				92438A4C2BEA6ED3002E8986 /* FeedViewController.swift in Sources */,
 				92438A482BEA6ED3002E8986 /* AppDelegate.swift in Sources */,
+				92B2C3952BEA758400A49E6D /* Bindable.swift in Sources */,
 				92438A4A2BEA6ED3002E8986 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
