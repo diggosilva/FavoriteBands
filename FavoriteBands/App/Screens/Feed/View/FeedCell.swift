@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class FeedCell: UITableViewCell {
     static let identifier = "FeedCell"
@@ -22,6 +23,8 @@ class FeedCell: UITableViewCell {
         image.contentMode = .scaleAspectFill
         image.image = UIImage(systemName: "person.fill")
         image.backgroundColor = .lightGray
+        image.layer.borderColor = UIColor.label.cgColor
+        image.layer.borderWidth = 1
         image.layer.cornerRadius = 50
         image.clipsToBounds = true
         return image
@@ -34,6 +37,12 @@ class FeedCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure(feedBand: FeedBand) {
+        guard let url = URL(string: feedBand.logo) else { return }
+        imageLogo.sd_setImage(with: url)
+        self.accessoryType = .disclosureIndicator
     }
     
     private func setupView() {

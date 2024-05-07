@@ -19,6 +19,7 @@ class FeedView: UIView {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         table.register(FeedCell.self, forCellReuseIdentifier: FeedCell.identifier)
+        table.backgroundColor = .secondarySystemFill
         table.rowHeight = 116
         return table
     }()
