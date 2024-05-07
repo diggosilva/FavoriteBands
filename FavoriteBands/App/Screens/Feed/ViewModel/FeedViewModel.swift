@@ -15,20 +15,24 @@ enum FeedViewControllerStates {
 
 class FeedViewModel {
     var state: Bindable<FeedViewControllerStates> = Bindable(value: .loading)
+    var service = Service()
     
+    var bandsList: [FeedBand] = []
     
-    func numbersOfRowsInSection() {
-        
+    func numbersOfRowsInSection() -> Int {
+        return bandsList.count
     }
     
-    func cellForRowAt(indexPath: IndexPath) {
-        
+    func cellForRowAt(indexPath: IndexPath) -> FeedBand {
+        return bandsList[indexPath.row]
     }
     
-    func loadData() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            
+    func loadDataBands() {
+        self.service.getBands { feedBands in
+            self.bandsList = feedBands
             self.state.value = .loaded
+        } onError: { error in
+            self.state.value = .error
         }
     }
 }

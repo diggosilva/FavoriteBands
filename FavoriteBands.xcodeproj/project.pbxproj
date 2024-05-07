@@ -15,6 +15,9 @@
 		92ADBABB2BEA76DB00B3992E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBABA2BEA76DB00B3992E /* FeedViewModel.swift */; };
 		92ADBABD2BEA7D7300B3992E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBABC2BEA7D7300B3992E /* FeedView.swift */; };
 		92ADBABF2BEA81D100B3992E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBABE2BEA81D100B3992E /* FeedCell.swift */; };
+		92ADBAC12BEA899900B3992E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBAC02BEA899900B3992E /* Service.swift */; };
+		92ADBAC32BEA8B1600B3992E /* BandsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBAC22BEA8B1600B3992E /* BandsResponse.swift */; };
+		92ADBAC52BEA8B5400B3992E /* FeedBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADBAC42BEA8B5400B3992E /* FeedBand.swift */; };
 		92B2C3952BEA758400A49E6D /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2C3942BEA758400A49E6D /* Bindable.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		92ADBABA2BEA76DB00B3992E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		92ADBABC2BEA7D7300B3992E /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		92ADBABE2BEA81D100B3992E /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		92ADBAC02BEA899900B3992E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		92ADBAC22BEA8B1600B3992E /* BandsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandsResponse.swift; sourceTree = "<group>"; };
+		92ADBAC42BEA8B5400B3992E /* FeedBand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBand.swift; sourceTree = "<group>"; };
 		92B2C3942BEA758400A49E6D /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +151,7 @@
 		92438A632BEA7036002E8986 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				92ADBAC02BEA899900B3992E /* Service.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -160,6 +167,8 @@
 		92438A652BEA7041002E8986 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				92ADBAC22BEA8B1600B3992E /* BandsResponse.swift */,
+				92ADBAC42BEA8B5400B3992E /* FeedBand.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,11 +244,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				92ADBABF2BEA81D100B3992E /* FeedCell.swift in Sources */,
+				92ADBAC12BEA899900B3992E /* Service.swift in Sources */,
 				92ADBABB2BEA76DB00B3992E /* FeedViewModel.swift in Sources */,
 				92438A4C2BEA6ED3002E8986 /* FeedViewController.swift in Sources */,
 				92438A482BEA6ED3002E8986 /* AppDelegate.swift in Sources */,
 				92B2C3952BEA758400A49E6D /* Bindable.swift in Sources */,
 				92ADBABD2BEA7D7300B3992E /* FeedView.swift in Sources */,
+				92ADBAC32BEA8B1600B3992E /* BandsResponse.swift in Sources */,
+				92ADBAC52BEA8B5400B3992E /* FeedBand.swift in Sources */,
 				92438A4A2BEA6ED3002E8986 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

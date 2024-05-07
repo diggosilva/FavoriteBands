@@ -22,7 +22,7 @@ class FeedViewController: UIViewController {
         setNavBar()
         setDelegateAndDataSource()
         handleStates()
-        viewModel.loadData()
+        viewModel.loadDataBands()
     }
     
     private func setNavBar() {
@@ -60,11 +60,13 @@ class FeedViewController: UIViewController {
     private func showErrorState() {
         let alert = UIAlertController(title: "Ocorreu um erro!", message: "Tentar novamente?", preferredStyle: .alert)
         let ok = UIAlertAction(title: "Sim", style: .default) { action in
-            
+            self.viewModel.loadDataBands()
         }
+        
         let nok = UIAlertAction(title: "Não", style: .cancel) { action in
-            
+            self.feedView.spinner.stopAnimating()
         }
+        
         alert.addAction(ok)
         alert.addAction(nok)
         present(alert, animated: true)
