@@ -9,4 +9,33 @@ import Foundation
 
 struct FeedBand: Codable {
     let logo: String
+    let name: String
+    let members: [Member]
+    let albums: [Album]
+    
+    struct Member: Codable {
+        let image: String
+        let name, instrument: String
+    }
+    
+    struct Album: Codable {
+        let cover: String
+        let name, year: String
+        let firstSingle: FirstSingle
+
+        enum CodingKeys: String, CodingKey {
+            case cover, name, year
+            case firstSingle = "first_single"
+        }
+    }
+
+    struct FirstSingle: Codable {
+        let name: String
+        let videoClip: String
+
+        enum CodingKeys: String, CodingKey {
+            case name
+            case videoClip = "video_clip"
+        }
+    }
 }

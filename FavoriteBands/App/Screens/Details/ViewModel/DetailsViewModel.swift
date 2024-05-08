@@ -9,23 +9,44 @@ import Foundation
 
 enum DetailsViewControllerStates {
     case loading
-    case loaded(MemberDetails)
+    case loaded
     case error
+}
+
+enum DetailSection {
+    case member([Member])
+    case album([Album])
 }
 
 class DetailsViewModel {
     private var state: Bindable<DetailsViewControllerStates> = Bindable(value: .loading)
-    private var service = Service()
+    private var service: ServiceProtocol = Service()
     
-    let member: MemberDetails
+    var bands: [FeedBand] = []
+    var sections: [DetailSection] = []
+
+    func numbersOfSection() -> Int {
+        switch sections[0] {
+        case .member(let member):
+            return member.count
+        case .album(let album):
+            return album.count
+        }
+    }
     
-    init(member: MemberDetails) {
-        self.member = member
+    func numbersOfRowsInSection() -> Int {
+        return sections.count
+    }
+    
+    func cellForRowAt(indexPath: IndexPath) -> DetailSection {
+        let section = sections[indexPath.section]
+        return sections[indexPath.section]
     }
     
     func loadDataDetails() {
-        service.getDetailsBands { memberDetails in
-            self.state.value = .loaded(memberDetails)
+        service.getBands { memberDetails in
+            self.bands = memberDetails
+            self.state.value = .loaded
         } onError: { error in
             self.state.value = .error
         }

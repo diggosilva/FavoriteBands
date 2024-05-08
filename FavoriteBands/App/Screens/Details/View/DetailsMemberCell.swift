@@ -55,9 +55,9 @@ class DetailsMemberCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(memberDetails: MemberDetails) {
-        labelName.text = memberDetails.name
-        labelInstrument.text = memberDetails.instrument
+    func configure(member: FeedBand) {
+        labelName.text = member.name
+        labelInstrument.text = member.members[0].instrument
     }
     
     private func setupView() {

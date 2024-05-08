@@ -15,7 +15,7 @@ enum FeedViewControllerStates {
 
 class FeedViewModel {
     var state: Bindable<FeedViewControllerStates> = Bindable(value: .loading)
-    var service = Service()
+    var service: ServiceProtocol = Service()
     
     var bandsList: [FeedBand] = []
     var membersList: [MemberDetails] = []
