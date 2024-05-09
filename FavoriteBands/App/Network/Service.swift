@@ -28,22 +28,22 @@ class Service: ServiceProtocol {
                     var feedBand: [FeedBand] = []
                     
                     for band in bandsResponse.favoriteBands {
-                        var feedBandMembers: [FeedBand.Member] = []
-                        var feedBandAlbums: [FeedBand.Album] = []
+                        var feedBandMembers: [Member] = []
+                        var feedBandAlbums: [Album] = []
                         
                         for member in band.members {
-                            feedBandMembers.append(FeedBand.Member(
+                            feedBandMembers.append(Member(
                                 image: member.image,
                                 name: member.name,
                                 instrument: member.instrument))
                         }
                         
                         for album in band.albums {
-                            feedBandAlbums.append(FeedBand.Album(
+                            feedBandAlbums.append(Album(
                                 cover: album.cover,
                                 name: album.name,
                                 year: album.year,
-                                firstSingle: FeedBand.FirstSingle(
+                                firstSingle: FirstSingle(
                                     name: album.firstSingle.name,
                                     videoClip: album.firstSingle.videoClip)))
                         }

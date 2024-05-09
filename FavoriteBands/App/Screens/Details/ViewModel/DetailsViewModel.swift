@@ -13,42 +13,43 @@ enum DetailsViewControllerStates {
     case error
 }
 
-enum DetailSection {
-    case member([Member])
-    case album([Album])
+enum CellType {
+    case member(Member)
+    case album(Album)
 }
 
 class DetailsViewModel {
     private var state: Bindable<DetailsViewControllerStates> = Bindable(value: .loading)
     private var service: ServiceProtocol = Service()
     
-    var bands: [FeedBand] = []
-    var sections: [DetailSection] = []
-
-    func numbersOfSection() -> Int {
-        switch sections[0] {
-        case .member(let member):
-            return member.count
-        case .album(let album):
-            return album.count
-        }
+    let band: FeedBand
+    var sections: [Section] = []
+    
+    init(band: FeedBand) {
+        self.band = band
     }
     
-    func numbersOfRowsInSection() -> Int {
+    func numbersOfSection() -> Int {
         return sections.count
     }
     
-    func cellForRowAt(indexPath: IndexPath) -> DetailSection {
-        let section = sections[indexPath.section]
-        return sections[indexPath.section]
+    func numbersOfRowsInSection(numberOfRowsInSection section: Int) -> Int {
+        return sections[section].cells.count
     }
     
-    func loadDataDetails() {
-        service.getBands { memberDetails in
-            self.bands = memberDetails
-            self.state.value = .loaded
-        } onError: { error in
-            self.state.value = .error
-        }
+    func cellForRowAt(indexPath: IndexPath) -> CellType {
+        let section = sections[indexPath.section]
+        let cell = section.cells[indexPath.row]
+        return cell
+    }
+}
+
+struct Section {
+    var title: String
+    var cells: [CellType]
+    
+    init(title: String, cells: [CellType]) {
+        self.title = title
+        self.cells = cells
     }
 }
