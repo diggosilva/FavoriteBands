@@ -10,7 +10,16 @@ import UIKit
 class DetailsViewController: UIViewController {
     
     let detailsView = DetailsView()
-    let viewModel = DetailsViewModel()
+    let viewModel: DetailsViewModel
+    
+    init(feedBand: FeedBand) {
+        self.viewModel = DetailsViewModel(band: feedBand)
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         super.loadView()
@@ -44,19 +53,25 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.section {
-        case 0:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: DetailsMemberCell.identifier, for: indexPath) as? DetailsMemberCell else { return UITableViewCell() }
-            
-            return cell
-        default:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: DetailsAlbumCell.identifier, for: indexPath) as? DetailsAlbumCell else { return UITableViewCell() }
-            
-            return cell
+        let cellType = viewModel.cellForRowAt(indexPath: indexPath)
+        
+        switch cellType {
+        case .member(let member):
+            guard let memberCell = tableView.dequeueReusableCell(withIdentifier: DetailsMemberCell.identifier, for: indexPath) as? DetailsMemberCell else { return UITableViewCell() }
+            memberCell.configure(member: member)
+            return memberCell
+        case .album(let album):
+            guard let albumCell = tableView.dequeueReusableCell(withIdentifier: DetailsAlbumCell.identifier, for: indexPath) as? DetailsAlbumCell else { return UITableViewCell() }
+            albumCell.configure(album: album)
+            return albumCell
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return viewModel.tableView(titleForHeaderInSection: section)
     }
 }

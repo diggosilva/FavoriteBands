@@ -63,8 +63,8 @@ class Service: ServiceProtocol {
     }
 }
 
-struct MemberDetails: Codable {
-    let image: String
-    let name: String
-    let instrument: String
-}
+//struct MemberDetails: Codable {
+//    let image: String
+//    let name: String
+//    let instrument: String
+//}

@@ -27,6 +27,10 @@ class DetailsViewModel {
     
     init(band: FeedBand) {
         self.band = band
+        let memberSection = Section(title: "Members", cells: band.members.compactMap({ CellType.member($0) }))
+        let albumSection = Section(title: "Albums", cells: band.albums.compactMap({ CellType.album($0) }))
+        sections.append(memberSection)
+        sections.append(albumSection)
     }
     
     func numbersOfSection() -> Int {
@@ -41,6 +45,10 @@ class DetailsViewModel {
         let section = sections[indexPath.section]
         let cell = section.cells[indexPath.row]
         return cell
+    }
+    
+    func tableView(titleForHeaderInSection section: Int) -> String? {
+        return "\(sections[section].title)"
     }
 }
 

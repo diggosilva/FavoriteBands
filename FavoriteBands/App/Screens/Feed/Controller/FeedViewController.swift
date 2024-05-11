@@ -86,8 +86,8 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        let detailsVC = DetailsViewController()
+        let feedBand = viewModel.bandsList[indexPath.row]
+        let detailsVC = DetailsViewController(feedBand: feedBand)
         navigationController?.pushViewController(detailsVC, animated: true)
     }
 }

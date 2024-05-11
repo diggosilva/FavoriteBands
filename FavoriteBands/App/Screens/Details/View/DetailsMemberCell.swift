@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DetailsMemberCell: UITableViewCell {
     static let identifier = "DetailsMemberCell"
@@ -33,6 +34,7 @@ class DetailsMemberCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome do Instrumento"
+        label.numberOfLines = 0
         label.textColor = .darkGray
         label.font = .systemFont(ofSize: 17, weight: .regular)
         return label
@@ -55,9 +57,11 @@ class DetailsMemberCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(member: FeedBand) {
+    func configure(member: Member) {
+        guard let url = URL(string: member.image) else { return }
+        imageMember.sd_setImage(with: url)
         labelName.text = member.name
-        labelInstrument.text = member.members[0].instrument
+        labelInstrument.text = member.instrument
     }
     
     private func setupView() {

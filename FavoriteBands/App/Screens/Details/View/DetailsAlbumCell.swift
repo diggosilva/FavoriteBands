@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DetailsAlbumCell: UITableViewCell {
     static let identifier = "DetailsAlbumCell"
@@ -67,6 +68,14 @@ class DetailsAlbumCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure(album: Album) {
+        guard let url = URL(string: album.cover) else { return }
+        imageAlbum.sd_setImage(with: url)
+        labelTitle.text = album.name
+        labelYear.text = album.year
+        labelSingle.text = album.firstSingle.name
     }
     
     private func setupView() {
