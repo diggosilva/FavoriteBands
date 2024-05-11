@@ -9,37 +9,37 @@ import Foundation
 
 struct BandsResponse: Codable {
     let favoriteBands: [FavoriteBand]
-}
-
-struct FavoriteBand: Codable {
-    let logo: String
-    let name: String
-    let members: [Member]
-    let albums: [Album]
-}
-
-struct Album: Codable {
-    let cover: String
-    let name, year: String
-    let firstSingle: FirstSingle
-
-    enum CodingKeys: String, CodingKey {
-        case cover, name, year
-        case firstSingle = "first_single"
+    
+    struct FavoriteBand: Codable {
+        let logo: String
+        let name: String
+        let members: [Member]
+        let albums: [Album]
     }
-}
 
-struct FirstSingle: Codable {
-    let name: String
-    let videoClip: String
+    struct Album: Codable {
+        let cover: String
+        let name, year: String
+        let firstSingle: FirstSingle
 
-    enum CodingKeys: String, CodingKey {
-        case name
-        case videoClip = "video_clip"
+        enum CodingKeys: String, CodingKey {
+            case cover, name, year
+            case firstSingle = "first_single"
+        }
     }
-}
 
-struct Member: Codable {
-    let image: String
-    let name, instrument: String
+    struct FirstSingle: Codable {
+        let name: String
+        let videoClip: String
+
+        enum CodingKeys: String, CodingKey {
+            case name
+            case videoClip = "video_clip"
+        }
+    }
+
+    struct Member: Codable {
+        let image: String
+        let name, instrument: String
+    }
 }
