@@ -73,6 +73,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		921AAB6E2BF135AA0082BF89 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		92438A3B2BEA6ED3002E8986 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +135,7 @@
 			children = (
 				92438A5E2BEA7002002E8986 /* Feed */,
 				92438A622BEA701F002E8986 /* Details */,
+				921AAB6E2BF135AA0082BF89 /* WebView */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
