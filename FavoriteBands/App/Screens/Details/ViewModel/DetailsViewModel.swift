@@ -7,19 +7,14 @@
 
 import Foundation
 
-enum CellType {
-    case member(Member)
-    case album(Album)
-}
-
 class DetailsViewModel {
     let band: FeedBand
     var sections: [Section] = []
     
     init(band: FeedBand) {
         self.band = band
-        let memberSection = Section(title: "Members", cells: band.members.compactMap({ CellType.member($0) }))
-        let albumSection = Section(title: "Albums", cells: band.albums.compactMap({ CellType.album($0) }))
+        let memberSection = Section(title: .members, cells: band.members.compactMap({ CellType.member($0) }))
+        let albumSection = Section(title: .albums, cells: band.albums.compactMap({ CellType.album($0) }))
         sections.append(memberSection)
         sections.append(albumSection)
     }
@@ -39,16 +34,6 @@ class DetailsViewModel {
     }
     
     func tableView(titleForHeaderInSection section: Int) -> String? {
-        return "\(sections[section].title)"
-    }
-}
-
-struct Section {
-    var title: String
-    var cells: [CellType]
-    
-    init(title: String, cells: [CellType]) {
-        self.title = title
-        self.cells = cells
+        return "\(sections[section].title)".capitalized
     }
 }
