@@ -10,6 +10,7 @@
 		5A03B5F6FF825B1E3FCD7DCD /* Pods_FavoriteBands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134CDF3F01135FC47640B3A8 /* Pods_FavoriteBands.framework */; };
 		920265522BF149BE00ED1589 /* bands.json in Resources */ = {isa = PBXBuildFile; fileRef = 920265512BF149BE00ED1589 /* bands.json */; };
 		921AAB732BF138E90082BF89 /* VideoClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AAB722BF138E90082BF89 /* VideoClipView.swift */; };
+		9240F2BB2BF2561000C8B149 /* VideoClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240F2BA2BF2561000C8B149 /* VideoClipViewController.swift */; };
 		92438A482BEA6ED3002E8986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A472BEA6ED3002E8986 /* AppDelegate.swift */; };
 		92438A4A2BEA6ED3002E8986 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A492BEA6ED3002E8986 /* SceneDelegate.swift */; };
 		92438A4C2BEA6ED3002E8986 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A4B2BEA6ED3002E8986 /* FeedViewController.swift */; };
@@ -34,6 +35,7 @@
 		4BE30F4891293869DFD3985C /* Pods-FavoriteBands.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoriteBands.debug.xcconfig"; path = "Target Support Files/Pods-FavoriteBands/Pods-FavoriteBands.debug.xcconfig"; sourceTree = "<group>"; };
 		920265512BF149BE00ED1589 /* bands.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bands.json; sourceTree = "<group>"; };
 		921AAB722BF138E90082BF89 /* VideoClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClipView.swift; sourceTree = "<group>"; };
+		9240F2BA2BF2561000C8B149 /* VideoClipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClipViewController.swift; sourceTree = "<group>"; };
 		92438A442BEA6ED3002E8986 /* FavoriteBands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteBands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92438A472BEA6ED3002E8986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92438A492BEA6ED3002E8986 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		921AAB712BF138690082BF89 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9240F2BA2BF2561000C8B149 /* VideoClipViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92ADBABF2BEA81D100B3992E /* FeedCell.swift in Sources */,
+				9240F2BB2BF2561000C8B149 /* VideoClipViewController.swift in Sources */,
 				92ADBAC12BEA899900B3992E /* Service.swift in Sources */,
 				92ADBAD22BEAC58F00B3992E /* DetailsViewModel.swift in Sources */,
 				92ADBACC2BEA9B8500B3992E /* DetailsView.swift in Sources */,

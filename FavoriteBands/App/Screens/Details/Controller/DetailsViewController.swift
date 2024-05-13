@@ -69,6 +69,12 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.section == 1 {
+            let singleSelected = viewModel.band.albums[indexPath.row].firstSingle
+            let videoClipVC = VideoClipViewController()
+            videoClipVC.videoClipView.configure(clip: singleSelected)
+            navigationController?.pushViewController(videoClipVC, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
