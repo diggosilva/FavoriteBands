@@ -33,7 +33,7 @@ class DetailsViewController: UIViewController {
     }
     
     private func setNavBar() {
-        title = "DETALHES"
+        title = viewModel.band.name.uppercased()
         view.backgroundColor = .systemBackground
     }
     

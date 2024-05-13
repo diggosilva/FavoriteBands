@@ -22,8 +22,7 @@ class FeedViewController: UIViewController {
         setNavBar()
         setDelegateAndDataSource()
         handleStates()
-//        viewModel.loadDataBands()
-        viewModel.loadMockedData()
+        viewModel.loadDataBands()
     }
     
     private func setNavBar() {
