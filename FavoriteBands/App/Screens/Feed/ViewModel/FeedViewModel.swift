@@ -35,4 +35,11 @@ class FeedViewModel {
             self.state.value = .error
         }
     }
+    
+    func loadMockedData() {
+        self.service.loadMock(filename: "bands") { feedBands in
+            self.bandsList = feedBands
+            self.state.value = .loaded
+        }
+    }
 }
