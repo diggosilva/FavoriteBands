@@ -71,7 +71,7 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.section == 1 {
             let singleSelected = viewModel.band.albums[indexPath.row].firstSingle
-            let videoClipVC = VideoClipViewController()
+            let videoClipVC = VideoClipViewController(firstSingle: singleSelected)
             videoClipVC.videoClipView.configure(clip: singleSelected)
             navigationController?.pushViewController(videoClipVC, animated: true)
         }

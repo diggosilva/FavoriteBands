@@ -7,21 +7,12 @@
 
 import Foundation
 
-//enum DetailsViewControllerStates {
-//    case loading
-//    case loaded
-//    case error
-//}
-
 enum CellType {
     case member(Member)
     case album(Album)
 }
 
 class DetailsViewModel {
-//    private var state: Bindable<DetailsViewControllerStates> = Bindable(value: .loading)
-//    private var service: ServiceProtocol = Service()
-    
     let band: FeedBand
     var sections: [Section] = []
     

@@ -74,8 +74,8 @@ class DetailsAlbumCell: UITableViewCell {
         guard let url = URL(string: album.cover) else { return }
         imageAlbum.sd_setImage(with: url)
         labelTitle.text = album.name
-        labelYear.text = album.year
-        labelSingle.text = album.firstSingle.name
+        labelYear.text = "Year: \(album.year)"
+        labelSingle.text = "Single: \(album.firstSingle.name)"
     }
     
     private func setupView() {

@@ -11,6 +11,7 @@
 		920265522BF149BE00ED1589 /* bands.json in Resources */ = {isa = PBXBuildFile; fileRef = 920265512BF149BE00ED1589 /* bands.json */; };
 		921AAB732BF138E90082BF89 /* VideoClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AAB722BF138E90082BF89 /* VideoClipView.swift */; };
 		9240F2BB2BF2561000C8B149 /* VideoClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240F2BA2BF2561000C8B149 /* VideoClipViewController.swift */; };
+		9240F2BD2BF262A800C8B149 /* VideoClipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240F2BC2BF262A800C8B149 /* VideoClipViewModel.swift */; };
 		92438A482BEA6ED3002E8986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A472BEA6ED3002E8986 /* AppDelegate.swift */; };
 		92438A4A2BEA6ED3002E8986 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A492BEA6ED3002E8986 /* SceneDelegate.swift */; };
 		92438A4C2BEA6ED3002E8986 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92438A4B2BEA6ED3002E8986 /* FeedViewController.swift */; };
@@ -36,6 +37,7 @@
 		920265512BF149BE00ED1589 /* bands.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bands.json; sourceTree = "<group>"; };
 		921AAB722BF138E90082BF89 /* VideoClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClipView.swift; sourceTree = "<group>"; };
 		9240F2BA2BF2561000C8B149 /* VideoClipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClipViewController.swift; sourceTree = "<group>"; };
+		9240F2BC2BF262A800C8B149 /* VideoClipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClipViewModel.swift; sourceTree = "<group>"; };
 		92438A442BEA6ED3002E8986 /* FavoriteBands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteBands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92438A472BEA6ED3002E8986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92438A492BEA6ED3002E8986 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		921AAB6F2BF138670082BF89 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9240F2BC2BF262A800C8B149 /* VideoClipViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				92438A482BEA6ED3002E8986 /* AppDelegate.swift in Sources */,
 				92B2C3952BEA758400A49E6D /* Bindable.swift in Sources */,
 				92ADBABD2BEA7D7300B3992E /* FeedView.swift in Sources */,
+				9240F2BD2BF262A800C8B149 /* VideoClipViewModel.swift in Sources */,
 				92ADBAC32BEA8B1600B3992E /* BandsResponse.swift in Sources */,
 				92ADBAC52BEA8B5400B3992E /* FeedBand.swift in Sources */,
 				92438A4A2BEA6ED3002E8986 /* SceneDelegate.swift in Sources */,
