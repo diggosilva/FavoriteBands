@@ -64,15 +64,15 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellType = viewModel.cellTypeFor(indexPath: indexPath)
         
-        switch cellType {
+        let cell: UITableViewCell = switch cellType {
         case .member(let member):
-            guard let memberCell = tableView.dequeueReusableCell(withIdentifier: DetailsMemberCell.identifier, for: indexPath) as? DetailsMemberCell else { return UITableViewCell() }
+            let memberCell = tableView.dequeueReusableCell(withIdentifier: DetailsMemberCell.identifier, for: indexPath) as! DetailsMemberCell
             memberCell.configure(member: member)
-            return memberCell
+            memberCell
         case .album(let album):
-            guard let albumCell = tableView.dequeueReusableCell(withIdentifier: DetailsAlbumCell.identifier, for: indexPath) as? DetailsAlbumCell else { return UITableViewCell() }
+            let albumCell = tableView.dequeueReusableCell(withIdentifier: DetailsAlbumCell.identifier, for: indexPath) as! DetailsAlbumCell
             albumCell.configure(album: album)
-            return albumCell
+            albumCell
         }
     }
     
