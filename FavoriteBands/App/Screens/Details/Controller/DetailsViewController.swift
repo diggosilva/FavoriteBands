@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class DetailsViewController: UIViewController {
     
@@ -33,13 +34,21 @@ class DetailsViewController: UIViewController {
     }
     
     private func setNavBar() {
-        title = viewModel.band.name.uppercased()
+        title = viewModel.getNameBand().uppercased()
         view.backgroundColor = .systemBackground
     }
     
     private func setDelegateAndDataSource() {
         detailsView.tableView.delegate = self
         detailsView.tableView.dataSource = self
+    }
+    
+    func showFirstSingle(url: String) {
+        guard let url = URL(string: url) else { return }
+        let config = SFSafariViewController.Configuration()
+        config.entersReaderIfAvailable = true
+        let vc = SFSafariViewController(url: url, configuration: config)
+        present(vc, animated: true)
     }
 }
 
@@ -69,11 +78,10 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if indexPath.section == 1 {
-            let singleSelected = viewModel.band.albums[indexPath.row].firstSingle
-            let videoClipVC = VideoClipViewController(firstSingle: singleSelected)
-            videoClipVC.videoClipView.configure(clip: singleSelected)
-            navigationController?.pushViewController(videoClipVC, animated: true)
+        let cellType = viewModel.cellForRowAt(indexPath: indexPath)
+        
+        if case .album(let album) = cellType {
+            showFirstSingle(url: album.firstSingle.videoClip)
         }
     }
     

@@ -7,11 +7,11 @@
 
 import Foundation
 
-class VideoClipViewModel {
-    
-    var firstSingle: FirstSingle
-    
-    init(firstSingle: FirstSingle) {
-        self.firstSingle = firstSingle
-    }
-}
+//class VideoClipViewModel {
+//    
+//    var firstSingle: FirstSingle
+//    
+//    init(firstSingle: FirstSingle) {
+//        self.firstSingle = firstSingle
+//    }
+//}

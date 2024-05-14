@@ -14,10 +14,10 @@ enum FeedViewControllerStates {
 }
 
 class FeedViewModel {
-    var state: Bindable<FeedViewControllerStates> = Bindable(value: .loading)
-    var service: ServiceProtocol = Service()
+    private (set) var state: Bindable<FeedViewControllerStates> = Bindable(value: .loading)
+    private var service: ServiceProtocol = Service()
     
-    var bandsList: [FeedBand] = []
+    private var bandsList: [FeedBand] = []
     
     func numbersOfRowsInSection() -> Int {
         return bandsList.count
