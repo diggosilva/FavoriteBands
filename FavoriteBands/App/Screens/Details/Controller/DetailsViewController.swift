@@ -11,7 +11,7 @@ import SafariServices
 class DetailsViewController: UIViewController {
     
     let detailsView = DetailsView()
-    let viewModel: DetailsViewModel
+    let viewModel: DetailsViewModelProtocol
     
     init(feedBand: FeedBand) {
         self.viewModel = DetailsViewModel(band: feedBand)
@@ -43,7 +43,7 @@ class DetailsViewController: UIViewController {
         detailsView.tableView.dataSource = self
     }
     
-    func showFirstSingle(url: String) {
+    private func showFirstSingle(url: String) {
         guard let url = URL(string: url) else { return }
         let config = SFSafariViewController.Configuration()
         config.entersReaderIfAvailable = true
@@ -62,7 +62,7 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellType = viewModel.cellForRowAt(indexPath: indexPath)
+        let cellType = viewModel.cellTypeFor(indexPath: indexPath)
         
         switch cellType {
         case .member(let member):
@@ -78,7 +78,7 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let cellType = viewModel.cellForRowAt(indexPath: indexPath)
+        let cellType = viewModel.cellTypeFor(indexPath: indexPath)
         
         if case .album(let album) = cellType {
             showFirstSingle(url: album.firstSingle.videoClip)

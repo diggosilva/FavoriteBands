@@ -7,7 +7,15 @@
 
 import Foundation
 
-class DetailsViewModel {
+protocol DetailsViewModelProtocol {
+    func getNameBand() -> String
+    func numbersOfSection() -> Int
+    func numbersOfRowsInSection(numberOfRowsInSection section: Int) -> Int
+    func cellTypeFor(indexPath: IndexPath) -> CellType
+    func tableView(titleForHeaderInSection section: Int) -> String?
+}
+
+class DetailsViewModel: DetailsViewModelProtocol {
     private let band: FeedBand
     private var sections: [Section] = []
     
@@ -31,7 +39,7 @@ class DetailsViewModel {
         return sections[section].cells.count
     }
     
-    func cellForRowAt(indexPath: IndexPath) -> CellType {
+    func cellTypeFor(indexPath: IndexPath) -> CellType {
         let section = sections[indexPath.section]
         let cell = section.cells[indexPath.row]
         return cell

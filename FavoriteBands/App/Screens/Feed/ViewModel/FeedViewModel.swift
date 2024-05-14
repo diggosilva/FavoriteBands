@@ -7,23 +7,35 @@
 
 import Foundation
 
+protocol FeedViewModelProtocol {
+    func numbersOfRowsInSection() -> Int
+    func feedBandFor(indexPath: IndexPath) -> FeedBand
+    func loadDataBands()
+    
+    var state: Bindable<FeedViewControllerStates> { get set }
+}
+
 enum FeedViewControllerStates {
     case loading
     case loaded
     case error
 }
 
-class FeedViewModel {
-    private (set) var state: Bindable<FeedViewControllerStates> = Bindable(value: .loading)
+class FeedViewModel: FeedViewModelProtocol {
+    var state: Bindable<FeedViewControllerStates> = Bindable(value: .loading)
+   
     private var service: ServiceProtocol = Service()
-    
     private var bandsList: [FeedBand] = []
+    
+    init(service: ServiceProtocol = Service()) {
+        self.service = service
+    }
     
     func numbersOfRowsInSection() -> Int {
         return bandsList.count
     }
     
-    func cellForRowAt(indexPath: IndexPath) -> FeedBand {
+    func feedBandFor(indexPath: IndexPath) -> FeedBand {
         return bandsList[indexPath.row]
     }
     
