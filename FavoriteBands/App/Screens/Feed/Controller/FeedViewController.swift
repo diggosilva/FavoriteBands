@@ -9,8 +9,8 @@ import UIKit
 
 class FeedViewController: UIViewController {
     
-    let feedView = FeedView()
-    let viewModel = FeedViewModel()
+    private let feedView = FeedView()
+    private let viewModel: FeedViewModelProtocol = FeedViewModel()
     
     override func loadView() {
         super.loadView()
@@ -80,13 +80,13 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedCell.identifier, for: indexPath) as? FeedCell else { return UITableViewCell() }
-        cell.configure(feedBand: viewModel.cellForRowAt(indexPath: indexPath))
+        cell.configure(feedBand: viewModel.feedBandFor(indexPath: indexPath))
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let feedBand = viewModel.cellForRowAt(indexPath: indexPath)
+        let feedBand = viewModel.feedBandFor(indexPath: indexPath)
         let detailsVC = DetailsViewController(feedBand: feedBand)
         navigationController?.pushViewController(detailsVC, animated: true)
     }
