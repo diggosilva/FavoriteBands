@@ -3,10 +3,10 @@
 //  FavoriteBands
 //
 //  Created by Diggo Silva on 07/05/24.
-//
+//  
 
 import Foundation
-
+  
 protocol ServiceProtocol {
     var dataTask: URLSessionDataTask? { get set }
     func getBands(onSuccess: @escaping([FeedBand]) -> Void, onError: @escaping(Error) -> Void)
@@ -16,7 +16,7 @@ class Service: ServiceProtocol {
     var dataTask: URLSessionDataTask?
     
     func getBands(onSuccess: @escaping([FeedBand]) -> Void, onError: @escaping(Error) -> Void) {
-        guard let url = URL(string: "https://ash-steel-holly.glitch.me/favoriteBands") else { return }
+        guard let url = URL(string: "https://valiant-plain-turnover.glitch.me/favoriteBands") else { return }
         
         dataTask = URLSession.shared.dataTask(with: url, completionHandler: { data, response, error in
             DispatchQueue.main.async {

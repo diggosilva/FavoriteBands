@@ -1,0 +1,560 @@
+{
+    "favoriteBands": [
+        {
+            "logo": "https://cdn11.bigcommerce.com/s-fg272t4iw0/images/stencil/1280x1280/products/4759/5012/C-14805__39500.1557816757.jpg?c=2",
+            "name": "Korn",
+            "members": [
+                {
+                    "image": "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2019/09/jonathan-davis-korn.jpg",
+                    "name": "Jonathan Davis",
+                    "instrument": "Lead Singer"
+                },
+                {
+                    "image": "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2020/03/korn-munky-guitarrista-696x468.jpg",
+                    "name": "Munky",
+                    "instrument": "Lead Guitar"
+                },
+                {
+                    "image": "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2020/06/brian-head-welch-korn-696x464.jpg",
+                    "name": "Head",
+                    "instrument": "Rhythm Guitar"
+                },
+                {
+                    "image": "https://townsquare.media/site/366/files/2015/09/Fieldy-Ethan-Miller.jpg?w=980&q=75",
+                    "name": "Fieldy",
+                    "instrument": "Bass"
+                },
+                {
+                    "image": "https://people.com/thmb/_1pBtUHqK_LPfgratxOeGMJ5wQc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/Ray-Luzier-korn-4f284c5f53e7494699df06656ca9be08.jpg",
+                    "name": "Ray Luzier",
+                    "instrument": "Drums"
+                }
+            ],
+            "albums": [
+                {
+                    "cover": "https://m.media-amazon.com/images/I/813gy42ZdxL._AC_SL1500_.jpg",
+                    "name": "Korn",
+                    "year": "1994",
+                    "first_single": {
+                        "name": "Clown",
+                        "video_clip" : "https://www.youtube.com/watch?v=Fs_E9TP6cvE"
+                    }
+                },
+                {
+                    "cover": "https://i.scdn.co/image/ab67616d0000b273ad4ca82999655cfc56c86828",
+                    "name": "Life is Peachy",
+                    "year": "1996",
+                    "first_single": {
+                        "name": "A.D.I.D.A.S",
+                        "video_clip" : "https://www.youtube.com/watch?v=239vHrwt8Rs"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/81O+9O0fbjL._AC_SL1500_.jpg",
+                    "name": "Follow the Leader",
+                    "year": "1998",
+                    "first_single": {
+                        "name": "Freak on a Leash",
+                        "video_clip" : "https://www.youtube.com/watch?v=jRGrNDV2mKc"
+                    }
+                },
+                {
+                    "cover": "https://upload.wikimedia.org/wikipedia/en/b/b6/KoRnIssues.jpg",
+                    "name": "Issues",
+                    "year": "1999",
+                    "first_single": {
+                        "name": "Make me Bad",
+                        "video_clip" : "https://www.youtube.com/watch?v=ujEph5vFwmc"
+                    }
+                }
+            ]
+        },
+        {
+            "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/09/avenged-sevenfold_logo-freelogovectors.net_.png",
+            "name": "Avenged Sevenfold",
+            "members": [
+                {
+                    "image": "https://confererock.com.br/wp-content/uploads/2022/11/matt-shadows-800x445.png",
+                    "name": "Matt Shadows",
+                    "instrument": "Lead Singer"
+                },
+                {
+                    "image": "https://www.1077thebone.com/wp-content/uploads/sites/1487/2023/06/Avenged-Sevenfold-Johnny-Christ-Tim-MosenfelderCorbis-via-Getty-Images-1-1.png",
+                    "name": "Johnny Christ",
+                    "instrument": "Bass"
+                },
+                {
+                    "image": "https://guitar.com/wp-content/uploads/2023/07/Synyster-Gates-Avenged-Sevenfold@2000x1500-696x522.jpg",
+                    "name": "Synyster Gates",
+                    "instrument": "Lead Guitar"
+                },
+                {
+                    "image": "https://www.revolvermag.com/sites/default/files/styles/image_954_x_537/public/media/images/article/zacky-vengeance.jpg?itok=2wy9sOuW&timestamp=1571836138&c=fd9a2e8cafb0dcff8ce01cda501c807e",
+                    "name": "Zacky Vengeance",
+                    "instrument": "Rhythm Guitar"
+                },
+                {
+                    "image": "https://blogger.googleusercontent.com/img/a/AVvXsEj95WU6XjeeODRm8_pKZVTFOPW2DDIXsS5FfaXAeUfa13OZDheOtFvwICeJd51mhD49sS1uhd429xB0uj6YiZm11vSiJuZn-xFum1aVmo2W-AtjXKGkx3y6bqqj06aQUcsWJ-WfZuGMgnXLdLgWi46aPEa9P1le1d5weeXVZBn_N6Dc8VLuD4vsyv8K9g=w704-h528-p-k-no-nu",
+                    "name": "The Rev",
+                    "instrument": "Drums"
+                }
+            ],
+            "albums": [
+                {
+                    "cover": "https://upload.wikimedia.org/wikipedia/pt/7/7b/City_of_Evil_album_cover.jpg",
+                    "name": "City Of Evil",
+                    "year": "2005",
+                    "first_single": {
+                        "name": "Bat Country",
+                        "video_clip": "https://youtu.be/IHS3qJdxefY?si=DZx9hg4LtQcoPFmk"
+                    }
+                },
+                {
+                    "cover": "https://upload.wikimedia.org/wikipedia/pt/7/72/Grhhhrhry.jpg",
+                    "name": "Avenged Sevenfold",
+                    "year": "2007",
+                    "first_single": {
+                        "name": "Afterlife",
+                        "video_clip": "https://youtu.be/HIRNdveLnJI?si=73KhQ9ReKvh-kbJZ"
+                    }
+                },
+                {
+                    "cover": "https://upload.wikimedia.org/wikipedia/pt/2/29/Avenged-Sevenfold-Nightmare.jpg.png",
+                    "name": "Nightmare",
+                    "year": "2010",
+                    "first_single": {
+                        "name": "Nightmare",
+                        "video_clip": "https://youtu.be/94bGzWyHbu0?si=oOMVg0LXGefn55JT"
+                    }
+                },
+                {
+                    "cover": "https://upload.wikimedia.org/wikipedia/pt/1/19/Hail-to-the-king-capa.jpg",
+                    "name": "Hail To The King",
+                    "year": "2013",
+                    "first_single": {
+                        "name": "Hail To The King",
+                        "video_clip": "https://youtu.be/DelhLppPSxY?si=xQS0wfOlhWshyFR5"
+                    }
+                }
+            ]
+        },
+        
+        
+        {
+            "logo": "https://logosmarcas.net/wp-content/uploads/2022/01/Red-Hot-Chili-Peppers-Logo.png",
+            "name": "Red Hot Chili Peppers",
+            "members": [
+                {
+                    "image": "https://imagens.brasil.elpais.com/resizer/HExdgAssRKl_M8_gPxNs5apWI9g=/1960x1470/ep01.epimg.net/cultura/imagenes/2016/05/15/actualidad/1463325920_633033_1463334394_noticia_fotograma.jpg",
+                    "name": "Anthony Kiedis",
+                    "instrument": "Lead Singer"
+                },
+                {
+                    "image": "https://veja.abril.com.br/wp-content/uploads/2016/05/flea-red-hot-chili-peppers-california-20110824-original.jpeg?quality=70&strip=info&w=1024&resize=1200,800",
+                    "name": "Flea",
+                    "instrument": "Bass"
+                },
+                {
+                    "image": "https://1.bp.blogspot.com/-Cvtks7xtPOs/Xi8HTeB7R6I/AAAAAAABRrQ/aE23AdeYjCs6iAZtS7wfd1YLCXcZgB_jgCLcBGAsYHQ/s1600/john-frusciante-regresa-a-los-red-hot-chili-peppers.jpg",
+                    "name": "John Frusciante",
+                    "instrument": "Lead Guitar"
+                },
+                {
+                    "image": "https://i0.wp.com/www.wikimetal.com.br/wp-content/uploads/2013/11/ChadSmith.jpg?fit=630%2C420&ssl=1",
+                    "name": "Chad Smith",
+                    "instrument": "Drums"
+                }
+            ],
+            "albums": [
+                {
+                    "cover": "https://1.bp.blogspot.com/-m-54v0OfEgc/YB3brACHYlI/AAAAAAAAqj4/ByIC97BRw7IEad1eRTXZRaEs0GyfnwKSwCLcBGAsYHQ/s800/Blood%2BSugar%2BSex%2BMagik%2Bcover.jpg",
+                    "name": "Blood Sugar Sex Magik",
+                    "year": "1991",
+                    "first_single": {
+                        "name": "Give it Away",
+                        "video_clip" : "https://www.youtube.com/watch?v=Mr_uHJPUlO8"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/81TnWHafWdL._AC_SL1448_.jpg",
+                    "name": "Californication",
+                    "year": "1998",
+                    "first_single": {
+                        "name": "Around the World",
+                        "video_clip" : "https://www.youtube.com/watch?v=a9eNQZbjpJk"
+                    }
+                },
+                {
+                    "cover": "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2022/07/rhcp-by-the-way-capa.jpg",
+                    "name": "By the Way",
+                    "year": "2002",
+                    "first_single": {
+                        "name": "Can't Stop",
+                        "video_clip" : "https://www.youtube.com/watch?v=8DyziWtkfBw"
+                    }
+                },
+                {
+                    "cover": "https://akamai.sscdn.co/uploadfile/letras/albuns/8/8/0/6/148561463479389.jpg",
+                    "name": "Stadium Arcadium",
+                    "year": "2006",
+                    "first_single": {
+                        "name": "Snow (Hey, oh)",
+                        "video_clip" : "https://www.youtube.com/watch?v=yuFI5KSPAt4"
+                    }
+                }
+            ]
+        },
+        {
+            "logo": "https://images.genius.com/33465f8f7b5e5c3186aefeafd3d07db6.1000x1000x1.jpg",
+            "name": "Twenty One Pilots",
+            "members": [
+                {
+                    "image": "https://citaty.net/media/authors/tyler-joseph.jpeg",
+                    "name": "Tyler Joseph",
+                    "instrument": "Lead Singer / Piano / Bass / Ukelele"
+                },
+                {
+                    "image": "https://imgix.bustle.com/2017/2/8/518768538.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg",
+                    "name": "Josh Dun",
+                    "instrument": "Drums"
+                }
+            ],
+            "albums": [
+                {
+                    "cover": "https://m.media-amazon.com/images/I/61ocXGV-t1L._AC_SL1425_.jpg",
+                    "name": "Vessel",
+                    "year": "2013",
+                    "first_single": {
+                        "name": "Ode to Sleep",
+                        "video_clip" : "https://www.youtube.com/watch?v=2OnO3UXFZdE"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/7103AD5YBlL._AC_SX569_.jpg",
+                    "name": "Blurryface",
+                    "year": "2015",
+                    "first_single": {
+                        "name": "Stressed Out",
+                        "video_clip" : "https://www.youtube.com/watch?v=pXRviuL6vMY"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/81znz4j2UTL._AC_SL1425_.jpg",
+                    "name": "Trench",
+                    "year": "2018",
+                    "first_single": {
+                        "name": "Chlorine",
+                        "video_clip" : "https://www.youtube.com/watch?v=eJnQBXmZ7Ek"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/81RYxWS3npL._AC_SL1425_.jpg",
+                    "name": "Scaled and Icy",
+                    "year": "2021",
+                    "first_single": {
+                        "name": "Saturday",
+                        "video_clip" : "https://www.youtube.com/watch?v=FiXVRdotCEk"
+                    }
+                },
+                {
+                    "cover": "https://media1.jpc.de/image/w1155/front/0/0075678608131.jpg",
+                    "name": "Clancy",
+                    "year": "2024",
+                    "first_single": {
+                        "name": "Overcompensate",
+                        "video_clip" : "https://www.youtube.com/watch?v=53tgVlXBZVg"
+                    }
+                }
+            ]
+        },
+        {
+            "logo": "https://p4.wallpaperbetter.com/wallpaper/253/56/846/foo-fighters-symbol-icon-cicle-wallpaper-preview.jpg",
+            "name": "Foo Fighters",
+            "members": [
+                {
+                    "image": "https://album.mediaset.es/eimg/10000/2020/08/31/clipping_7js171_9d89.jpg?w=1200&h=900",
+                    "name": "Dave Grohl",
+                    "instrument": "Lead Singer / Rhythm Guitar"
+                },
+                {
+                    "image": "https://static.wixstatic.com/media/607c45_e324fe6e5f294727baba25979989ceb6~mv2.jpg/v1/fill/w_566,h_359,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/607c45_e324fe6e5f294727baba25979989ceb6~mv2.jpg",
+                    "name": "Chris Shiflett",
+                    "instrument": "Lead Guitar"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pat_Smear_-_Foo_Fighters_-_Rock_am_Ring_2018_%28cropped%29.jpg",
+                    "name": "Pat Smear",
+                    "instrument": "Rhythm Guitar"
+                },
+                {
+                    "image": "https://images.mubicdn.net/images/cast_member/206195/cache-625127-1609293417/image-w856.jpg?size=800x",
+                    "name": "Nate Mendel",
+                    "instrument": "Bass"
+                },
+                {
+                    "image": "https://classic.exame.com/wp-content/uploads/2022/03/GettyImages-925456300.jpg?quality=70&strip=info&w=1024",
+                    "name": "Taylor Hawkins",
+                    "instrument": "Drums"
+                },
+                {
+                    "image": "https://insearchofrockgodsdotcom.files.wordpress.com/2018/10/rami-jaffee-foo-fighters-concrete-and-gold-tour-rogers-place-edmonton-oct-22-2018.jpg",
+                    "name": "Rami Jaffee",
+                    "instrument": "Keyboard"
+                }
+            ],
+            "albums": [
+                {
+                    "cover": "https://m.media-amazon.com/images/I/51xH2OnFJBL._AC_SX466_.jpg",
+                    "name": "Foo Fighters",
+                    "year": "1995",
+                    "first_single": {
+                        "name": "I'll Stick Around",
+                        "video_clip" : "https://www.youtube.com/watch?v=X_rTTsZZ9KE"
+                    }
+                },
+                {
+                    "cover": "https://upload.wikimedia.org/wikipedia/pt/f/f0/Foo_Fighters_-_The_Colour_and_the_Shape.jpg",
+                    "name": "The Shape and the Colour",
+                    "year": "1997",
+                    "first_single": {
+                        "name": "Everlong",
+                        "video_clip" : "https://www.youtube.com/watch?v=eBG7P-K-r1Y"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/71oNVLrVpRL._AC_SL1500_.jpg",
+                    "name": "There is Nothing Left to Lose",
+                    "year": "1999",
+                    "first_single": {
+                        "name": "Learn to Fly",
+                        "video_clip" : "https://www.youtube.com/watch?v=1VQ_3sBZEm0"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/61SappMS24L._AC_SL1500_.jpg",
+                    "name": "One by One",
+                    "year": "2002",
+                    "first_single": {
+                        "name": "All my Life",
+                        "video_clip" : "https://www.youtube.com/watch?v=xQ04WbgI9rg"
+                    }
+                }
+            ]
+        },
+        {
+            "logo": "https://i.pinimg.com/originals/06/dc/79/06dc79885dfc50847023d0a3ea318065.jpg",
+            "name": "Pearl Jam",
+            "members": [
+                {
+                    "image": "https://cdn1023.clicrbs.com.br/wp-content/uploads/sites/2/2021/08/eddie-vedder-capa.jpg",
+                    "name": "Eddie Vedder",
+                    "instrument": "Lead Singer / Rhythm Guitar"
+                },
+                {
+                    "image": "https://i0.wp.com/www.vintageguitar.com/wp-content/uploads/McCREADY_01.jpg?resize=696%2C693&ssl=1",
+                    "name": "Mike McCready",
+                    "instrument": "Lead Guitar"
+                },
+                {
+                    "image": "https://www.revolvermag.com/sites/default/files/media/images/article/stonegossard-2016-kevinmazur-wireimage-getty-web-crop.jpg",
+                    "name": "Stone Gossard",
+                    "instrument": "Rhythm Guitar"
+                },
+                {
+                    "image": "https://static.wixstatic.com/media/607c45_7da0e38a98ee44c7b6fe4803d905ec6f~mv2.jpg/v1/fill/w_566,h_283,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/607c45_7da0e38a98ee44c7b6fe4803d905ec6f~mv2.jpg",
+                    "name": "Jeff Ament",
+                    "instrument": "Bass"
+                },
+                {
+                    "image": "https://uploads.metropoles.com/wp-content/uploads/2023/03/17185445/Matt-Cameron-2-1024x683.jpg",
+                    "name": "Matt Cameron",
+                    "instrument": "Drums"
+                }
+            ],
+            "albums": [
+                {
+                    "cover": "https://i.discogs.com/ScM4yAcx1nrSkgm83_35XcZfOvd0yQu2QlhNO1a9unk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDE3/MjAyLTE1MDgzMTUx/OTItMzk0MS5qcGVn.jpeg",
+                    "name": "Ten",
+                    "year": "1991",
+                    "first_single": {
+                        "name": "Alive",
+                        "video_clip" : "https://www.youtube.com/watch?v=qM0zINtulhM"
+                    }
+                },
+                {
+                    "cover": "https://i.discogs.com/LnnSfEkkD3pGeJ5OI4SQoBUNvgXynFETD9bCmhdKdgQ/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MDkz/MjAtMTU1MTc4NjA0/Ni0yODI5LmpwZWc.jpeg",
+                    "name": "Vs.",
+                    "year": "1993",
+                    "first_single": {
+                        "name": "Daughter",
+                        "video_clip" : "https://www.youtube.com/watch?v=zgUwd2Gkb-E"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/914Z6uZ0uuL._AC_SL1500_.jpg",
+                    "name": "Vitalogy",
+                    "year": "1994",
+                    "first_single": {
+                        "name": "Better Man",
+                        "video_clip" : "https://www.youtube.com/watch?v=_4BObpNQqNo"
+                    }
+                },
+                {
+                    "cover": "https://upload.wikimedia.org/wikipedia/pt/c/cc/Pearl_Jam_-_Rio_Act.jpg",
+                    "name": "Riot Act",
+                    "year": "2002",
+                    "first_single": {
+                        "name": "I Am Mine",
+                        "video_clip" : "https://www.youtube.com/watch?v=Nkgv3LoQY2o"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/512xDdIcwqL._AC_SX466_.jpg",
+                    "name": "Lighting Bolt",
+                    "year": "2013",
+                    "first_single": {
+                        "name": "Sirens",
+                        "video_clip" : "https://www.youtube.com/watch?v=4jZBwyG7HPs"
+                    }
+                }
+            ]
+        },
+        {
+            "logo": "https://logosmarcas.net/wp-content/uploads/2020/04/Guns-N-Roses-Logo.png",
+            "name": "Guns n' Roses",
+            "members": [
+                {
+                    "image": "https://conteudo.imguol.com.br/c/entretenimento/25/2019/09/23/axl-rose-durante-show-na-filadelfia-nos-eua-1569265997245_v2_3x4.jpg",
+                    "name": "Axl Rose",
+                    "instrument": "Lead Singer"
+                },
+                {
+                    "image": "https://kissfm.com.br/wp-content/uploads/2023/10/slash.png",
+                    "name": "Slash",
+                    "instrument": "Lead Guitar"
+                },
+                {
+                    "image": "https://3.bp.blogspot.com/-CznjSIBWVRs/UNDqUeADZHI/AAAAAAAAKjE/dczNFHbZqgU/s1600/richard+fortus.jpg",
+                    "name": "Richard Fortus",
+                    "instrument": "Rhythm Guitar"
+                },
+                {
+                    "image": "https://www.92rockpop.com.br/wp-content/uploads/2023/05/duff-mckagan.jpg",
+                    "name": "Duff McKagan",
+                    "instrument": "Bass"
+                },
+                {
+                    "image": "https://images.equipboard.com/uploads/user/image/8773/big_frank-ferrer.jpg?v=1696569182",
+                    "name": "Frank Ferrer",
+                    "instrument": "Drums"
+                }
+            ],
+            "albums": [
+                {
+                    "cover": "https://www.estrondofilmeserock.com.br/wp-content/uploads/2021/07/guns-apetite.jpg",
+                    "name": "Appetite for Destruction",
+                    "year": "1987",
+                    "first_single": {
+                        "name": "Sweet Child o' Mine",
+                        "video_clip" : "https://www.youtube.com/watch?v=HlEuo9aR7Qo"
+                    }
+                },
+                {
+                    "cover": "https://i.discogs.com/DQgmaNseThtUHJz00fFdZf4W_zjY2YV56IvsGkS6Wc0/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwODE5/OS0xNDY5MDkxMzYz/LTUzMDguanBlZw.jpeg",
+                    "name": "Lies",
+                    "year": "1988",
+                    "first_single": {
+                        "name": "Patience",
+                        "video_clip" : "https://www.youtube.com/watch?v=ErvgV4P6Fzc"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/812UUC50GLL._UF1000,1000_QL80_.jpg",
+                    "name": "Use Your Illusion I",
+                    "year": "1991",
+                    "first_single": {
+                        "name": "November Rain",
+                        "video_clip" : "https://www.youtube.com/watch?v=8SbUC-UaAxE"
+                    }
+                },
+                {
+                    "cover": "https://i.discogs.com/AVPMHl5nuVkIQ8U0JDy8lQIyb0iKqLdmI78sUUVOfiQ/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MDAx/My0xNjI4MDY4MDg2/LTYwOTcuanBlZw.jpeg",
+                    "name": "Use Your Illusion II",
+                    "year": "1991",
+                    "first_single": {
+                        "name": "You Could be Mine",
+                        "video_clip" : "https://www.youtube.com/watch?v=qnFU-DxwpRs"
+                    }
+                },
+                {
+                    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/df/7a/f9/df7af97a-8fa5-b02c-e69d-9e4b66e91e81/00602537994533.rgb.jpg/1200x1200bf-60.jpg",
+                    "name": "The Spaghetti Incident?",
+                    "year": "1993",
+                    "first_single": {
+                        "name": "Since I Don't Have You",
+                        "video_clip" : "https://www.youtube.com/watch?v=IYOYlqOitDA"
+                    }
+                }
+            ]
+        },
+        {
+            "logo": "https://cdn.wallpapersafari.com/38/26/Zw74Rs.jpg",
+            "name": "Nirvana",
+            "members": [
+                {
+                    "image": "https://img.etimg.com/thumb/msid-33545790,width-650,height-488,imgsize-201295,,resizemode-75/.jpg",
+                    "name": "Kurt Cobain",
+                    "instrument": "Lead Singer / Lead Guitar"
+                },
+                {
+                    "image": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-181336-111170313.jpg",
+                    "name": "Krist Novoselic",
+                    "instrument": "Bass"
+                },
+                {
+                    "image": "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2023/10/dave-grohl-fortuna-nirvana.jpg",
+                    "name": "Dave Grohl",
+                    "instrument": "Drums"
+                }
+            ],
+            "albums": [
+                {
+                    "cover": "https://static.wixstatic.com/media/607c45_7cdb4a8be2b34aa8b3ad82af57030d92~mv2.jpg/v1/fill/w_820,h_820,al_c,q_85,enc_auto/607c45_7cdb4a8be2b34aa8b3ad82af57030d92~mv2.jpg",
+                    "name": "Bleach",
+                    "year": "1989",
+                    "first_single": {
+                        "name": "School",
+                        "video_clip" : "https://www.youtube.com/watch?v=DeoWhvsyOZ8"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/91G5ndi8yFL._AC_SL1500_.jpg",
+                    "name": "Nevermind",
+                    "year": "1991",
+                    "first_single": {
+                        "name": "Smells Like Teen Spirit",
+                        "video_clip" : "https://www.youtube.com/watch?v=hTWKbfoikeg"
+                    }
+                },
+                {
+                    "cover": "https://m.media-amazon.com/images/I/81N6OZTI7zL._AC_SX425_.jpg",
+                    "name": "Incesticide",
+                    "year": "1992",
+                    "first_single": {
+                        "name": "Sliver",
+                        "video_clip" : "https://www.youtube.com/watch?v=QECJ9pCyhns"
+                    }
+                },
+                {
+                    "cover": "https://upload.wikimedia.org/wikipedia/pt/b/b4/InUtero.jpeg",
+                    "name": "In Utero",
+                    "year": "1993",
+                    "first_single": {
+                        "name": "Rape me",
+                        "video_clip" : "https://www.youtube.com/watch?v=4TsqlT0rfJI"
+                    }
+                }
+            ]
+        }
+    ]
+}
