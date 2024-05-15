@@ -50,6 +50,21 @@ class DetailsViewController: UIViewController {
         let vc = SFSafariViewController(url: url, configuration: config)
         present(vc, animated: true)
     }
+    
+    func getCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell? {
+        let cellType = viewModel.cellTypeFor(indexPath: indexPath)
+          
+        switch cellType {
+        case .member(let member):
+            let memberCell = tableView.dequeueReusableCell(withIdentifier: DetailsMemberCell.identifier, for: indexPath) as? DetailsMemberCell
+            memberCell?.configure(member: member)
+            return memberCell
+        case .album(let album):
+            let albumCell = tableView.dequeueReusableCell(withIdentifier: DetailsAlbumCell.identifier, for: indexPath) as? DetailsAlbumCell
+            albumCell?.configure(album: album)
+            return albumCell
+        }
+    }
 }
 
 extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -62,18 +77,7 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellType = viewModel.cellTypeFor(indexPath: indexPath)
-        
-        let cell: UITableViewCell = switch cellType {
-        case .member(let member):
-            let memberCell = tableView.dequeueReusableCell(withIdentifier: DetailsMemberCell.identifier, for: indexPath) as! DetailsMemberCell
-            memberCell.configure(member: member)
-            memberCell
-        case .album(let album):
-            let albumCell = tableView.dequeueReusableCell(withIdentifier: DetailsAlbumCell.identifier, for: indexPath) as! DetailsAlbumCell
-            albumCell.configure(album: album)
-            albumCell
-        }
+        return getCell(tableView: tableView, indexPath: indexPath) ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
