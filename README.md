@@ -37,8 +37,9 @@ A iOS application written in Swift, that lists my favorite bands, when the user 
 - Swift 5.0 or later
 
 ## Functionalities
-- [x] List of products
-- [x] Section by products
+- [x] List of bands
+- [x] Section by members and albums
+- [x] Show video clip on youtube 
 
 ## Setup
 
