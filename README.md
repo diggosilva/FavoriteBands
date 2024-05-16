@@ -45,14 +45,14 @@ A iOS application written in Swift, that lists my favorite bands, when the user 
 First of all download and install Xcode, Cocoapods and then clone the repository:
 
 ```sh
-$ git@github.com:diggosilva/FakeStore.git
+$ git@github.com:diggosilva/FavoriteBands.git
 ```
 
 After cloning, do the following:
 
 ```sh
-$ cd <diretorio-base>/FakeStore/
-$ open FakeStore.xcworkspace/
+$ cd <diretorio-base>/FavoriteBands/
+$ open FavoriteBands.xcworkspace/
 ```
 
 ## Built With
@@ -62,3 +62,5 @@ $ open FakeStore.xcworkspace/
 ## Credits
 
 - Diggo Silva
+- Junior Silva
+- Helio Mesquita
