@@ -12,7 +12,8 @@
 A iOS application written in Swift, that lists my favorite bands, when the user selects a band, a tableView is displayed showing band details separated by Members and Albums sections. In this TableView, there are 2 customized cells. When clicking on an album, the video clip of the selected single will open on YouTube.
 
 <p align="left">
-    <img src="https://media.giphy.com/media/qeYqswy3VZnmkwssBI/giphy.gif" width="300" max-width="40%" alt="Github"/>
+    <img src="https://media.giphy.com/media/ARqCeaVad6hsWhKe1e/giphy.gif" width="300" max-width="40%" alt="Github"/>
+    
 </p> 
 
 ## Contents
