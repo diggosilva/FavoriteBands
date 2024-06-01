@@ -14,8 +14,6 @@ class DetailsAlbumCell: UITableViewCell {
     lazy var imageAlbum: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(systemName: "house.fill")
-        image.backgroundColor = .systemYellow
         image.contentMode = .scaleAspectFill
         image.layer.cornerRadius = 10
         image.clipsToBounds = true
@@ -25,7 +23,6 @@ class DetailsAlbumCell: UITableViewCell {
     lazy var labelTitle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Nome do Álbum Aqui"
         label.textAlignment = .right
         label.numberOfLines = 0
         label.font = .systemFont(ofSize: 20, weight: .bold)
@@ -35,7 +32,6 @@ class DetailsAlbumCell: UITableViewCell {
     lazy var labelYear: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Year: 1982"
         label.textAlignment = .right
         label.textColor = .darkGray
         label.font = .systemFont(ofSize: 17, weight: .medium)
@@ -45,7 +41,6 @@ class DetailsAlbumCell: UITableViewCell {
     lazy var labelSingle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Single: Primeiro Clipe"
         label.textAlignment = .right
         label.textColor = .darkGray
         label.font = .systemFont(ofSize: 17, weight: .semibold)

@@ -14,8 +14,6 @@ class DetailsMemberCell: UITableViewCell {
     lazy var imageMember: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(systemName: "person.fill")?.withTintColor(.systemRed, renderingMode: .alwaysOriginal)
-        image.backgroundColor = .lightGray
         image.contentMode = .scaleAspectFill
         image.layer.cornerRadius = 40
         image.clipsToBounds = true
@@ -25,7 +23,6 @@ class DetailsMemberCell: UITableViewCell {
     lazy var labelName: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Nome do Integrante"
         label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
@@ -33,7 +30,6 @@ class DetailsMemberCell: UITableViewCell {
     lazy var labelInstrument: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Nome do Instrumento"
         label.numberOfLines = 0
         label.textColor = .darkGray
         label.font = .systemFont(ofSize: 17, weight: .regular)
