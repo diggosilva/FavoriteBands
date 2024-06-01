@@ -10,8 +10,8 @@ import SafariServices
 
 class DetailsViewController: UIViewController {
     
-    let detailsView = DetailsView()
-    let viewModel: DetailsViewModelProtocol
+    private let detailsView = DetailsView()
+    private let viewModel: DetailsViewModelProtocol
     
     init(feedBand: FeedBand) {
         self.viewModel = DetailsViewModel(band: feedBand)
