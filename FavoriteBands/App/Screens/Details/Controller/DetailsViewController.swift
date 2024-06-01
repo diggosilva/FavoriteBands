@@ -51,7 +51,7 @@ class DetailsViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    func getCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell? {
+    private func getCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell? {
         let cellType = viewModel.cellTypeFor(indexPath: indexPath)
           
         switch cellType {
