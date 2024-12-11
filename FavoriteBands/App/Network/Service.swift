@@ -8,7 +8,6 @@
 import Foundation
   
 protocol ServiceProtocol {
-    var dataTask: URLSessionDataTask? { get set }
     func getBands(onSuccess: @escaping([FeedBand]) -> Void, onError: @escaping(Error) -> Void)
 }
 
